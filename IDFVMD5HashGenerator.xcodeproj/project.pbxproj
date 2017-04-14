@@ -13,6 +13,7 @@
 		1944A2001EA0A40000610B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1944A1FE1EA0A40000610B5E /* Main.storyboard */; };
 		1944A2021EA0A40000610B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1944A2011EA0A40000610B5E /* Assets.xcassets */; };
 		1944A2051EA0A40000610B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1944A2031EA0A40000610B5E /* LaunchScreen.storyboard */; };
+		1944A20E1EA0A8E100610B5E /* HashUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1944A20D1EA0A8E100610B5E /* HashUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1944A2011EA0A40000610B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1944A2041EA0A40000610B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1944A2061EA0A40000610B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1944A20C1EA0A8E100610B5E /* HashUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashUtility.h; sourceTree = "<group>"; };
+		1944A20D1EA0A8E100610B5E /* HashUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HashUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				1944A2031EA0A40000610B5E /* LaunchScreen.storyboard */,
 				1944A2061EA0A40000610B5E /* Info.plist */,
 				1944A1F51EA0A40000610B5E /* Supporting Files */,
+				1944A20C1EA0A8E100610B5E /* HashUtility.h */,
+				1944A20D1EA0A8E100610B5E /* HashUtility.m */,
 			);
 			path = IDFVMD5HashGenerator;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1944A20E1EA0A8E100610B5E /* HashUtility.m in Sources */,
 				1944A1FD1EA0A40000610B5E /* ViewController.m in Sources */,
 				1944A1FA1EA0A40000610B5E /* AppDelegate.m in Sources */,
 				1944A1F71EA0A40000610B5E /* main.m in Sources */,
