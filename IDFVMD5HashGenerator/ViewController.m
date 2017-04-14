@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "HashUtility.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *idfvStrLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mdfiveHashedStrLabel;
 
 @end
 
@@ -16,11 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.idfvStrLabel.text = @"IDFV: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+    self.mdfiveHashedStrLabel.text = @"MD5Hash: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+}
+- (IBAction)startAction:(id)sender {
+
+    NSDictionary *dic = [HashUtility getHashedIDFVDic];
+
+    self.idfvStrLabel.text = [NSString stringWithFormat: @"IDFV: %@", [dic objectForKey:@"idfv"]];
+    self.mdfiveHashedStrLabel.text = [NSString stringWithFormat:@"MD5Hash: %@", [dic objectForKey:@"hashed"]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
 
 @end

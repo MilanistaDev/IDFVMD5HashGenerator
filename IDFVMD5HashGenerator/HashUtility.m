@@ -12,15 +12,19 @@
 @implementation HashUtility
 
 /**
- * IDFVを取得しMD5ハッシュ値に変換したものを返す
+ * IDFVを取得しMD5ハッシュ値に変換し返す
  *
- * @return MD5ハッシュ値に変換されたIDFVの文字列
+ * @return IDFVの文字列とMD5ハッシュ値に変換されたIDFVの文字列を返す
  */
-+ (NSString*)hashedIDFVStr {
++ (NSDictionary*)getHashedIDFVDic {
 
     NSString *idfv = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    NSString *hashedIDFV = [self mdFiveHashGenerator:idfv];
 
-    return [self mdFiveHashGenerator:idfv];
+    NSDictionary *strDic = [NSDictionary dictionaryWithObjectsAndKeys:
+                            idfv, @"idfv",
+                            hashedIDFV, @"hashed", nil];
+    return strDic;
 }
 
 /**

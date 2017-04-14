@@ -10,6 +10,6 @@
 
 @interface HashUtility : NSObject
 
-+ (NSString*)hashedIDFVStr;
++ (NSDictionary*)getHashedIDFVDic;
 
 @end
